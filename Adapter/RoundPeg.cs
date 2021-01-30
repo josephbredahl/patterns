@@ -6,15 +6,15 @@ namespace Adapter
 {
     public class RoundPeg
     {
-        private int m_radius;
+        private double m_radius;
 
         public RoundPeg() : this(0) { }
-        public RoundPeg(int radius)
+        public RoundPeg(double radius)
         {
             m_radius = radius;
         }
 
-        public int getRadius()
+        public virtual double getRadius()
         {
             return m_radius;
         }

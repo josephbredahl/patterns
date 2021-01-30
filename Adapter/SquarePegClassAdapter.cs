@@ -13,9 +13,9 @@ namespace Adapter
             m_peg = peg;
         }
 
-        new public int getRadius()
+        public override double getRadius()
         {
-            return m_peg.getWidth() * (int)Math.Sqrt(2) / 2;
+            return m_peg.getWidth() * Math.Sqrt(2) / 2;
         }
     }
 }

@@ -6,14 +6,14 @@ namespace Adapter
 {
     public class SquarePeg
     {
-        private int m_width;
+        private double m_width;
 
-        public SquarePeg(int width)
+        public SquarePeg(double width)
         {
             m_width = width;
         }
 
-        public int getWidth()
+        public double getWidth()
         {
             return m_width;
         }

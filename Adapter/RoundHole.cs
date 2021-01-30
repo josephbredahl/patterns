@@ -6,14 +6,14 @@ namespace Adapter
 {
     public class RoundHole
     {
-        private int m_radius;
+        private double m_radius;
 
-        public RoundHole(int radius)
+        public RoundHole(double radius)
         {
             m_radius = radius;
         }
 
-        public int getRadius()
+        public double getRadius()
         {
             return m_radius;
         }
