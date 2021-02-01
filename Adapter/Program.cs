@@ -17,8 +17,12 @@ namespace Adapter
 
             var small_sqpeg_class_adapter = new SquarePegClassAdapter(small_sqpeg);
             var large_sqpeg_class_adapter = new SquarePegClassAdapter(large_sqpeg);
+            var small_sqpeg_Interface_adapter = new SquarePegInterfaceAdapter(small_sqpeg);
+            var large_sqpeg_Interface_adapter = new SquarePegInterfaceAdapter(large_sqpeg);
             Console.WriteLine("Hole Fits: " + hole.fits(small_sqpeg_class_adapter));
             Console.WriteLine("Hole Fits: " + hole.fits(large_sqpeg_class_adapter));
+            Console.WriteLine("Hole Fits: " + hole.fits(small_sqpeg_Interface_adapter));
+            Console.WriteLine("Hole Fits: " + hole.fits(large_sqpeg_Interface_adapter));
         }
     }
 }

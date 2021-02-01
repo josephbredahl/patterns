@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Adapter
 {
-    public class RoundPeg
+    public interface IRoundPeg
+    {
+        public double getRadius();
+    }
+    public class RoundPeg : IRoundPeg
     {
         private double m_radius;
 

@@ -18,9 +18,19 @@ namespace Adapter
             return m_radius;
         }
 
+        private bool fits(double radius)
+        {
+            return radius <= m_radius;
+        }
+
         public bool fits(RoundPeg peg)
         {
-            return peg.getRadius() <= m_radius;
+            return fits(peg.getRadius());
+        }
+
+        public bool fits(IRoundPeg peg)
+        {
+            return fits(peg.getRadius());
         }
 
     }
